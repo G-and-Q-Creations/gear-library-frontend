@@ -7,7 +7,7 @@ const app: Express = express();
 const port = process.env.PORT;
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('goeun & quigley gear library!');
+    res.send('goeun and quigley gear library!');
 });
 
 app.listen(port, () => {
