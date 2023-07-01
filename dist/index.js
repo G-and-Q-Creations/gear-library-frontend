@@ -12,7 +12,6 @@ const port = process.env.PORT;
 app.use(express_1.default.static('dist'));
 app.get('/', (req, res) => {
     res.sendFile(process.cwd() + '/index.html');
-    console.log('whatever');
 });
 app.get('/about', (req, res) => {
     res.sendFile(process.cwd() + '/about.html');

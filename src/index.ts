@@ -11,7 +11,6 @@ app.use(express.static('dist'))
 
 app.get('/', (req: Request, res: Response) => {
     res.sendFile(process.cwd() + '/index.html')
-    console.log('whatever')
 })
 
 app.get('/about', (req: Request, res: Response) => {
