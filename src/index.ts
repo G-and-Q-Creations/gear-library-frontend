@@ -6,8 +6,16 @@ dotenv.config()
 const app: Express = express()
 const port = process.env.PORT
 
+// THIS LINE CONNECTS FILES TOGETHER
+app.use(express.static('dist'))
+
 app.get('/', (req: Request, res: Response) => {
-    res.sendFile(__dirname + '/index.html')
+    res.sendFile(process.cwd() + '/index.html')
+    console.log('whatever')
+})
+
+app.get('/about', (req: Request, res: Response) => {
+    res.sendFile(process.cwd() + '/about.html')
 })
 
 app.listen(port, () => {

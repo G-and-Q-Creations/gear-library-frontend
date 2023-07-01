@@ -8,9 +8,14 @@ const dotenv_1 = __importDefault(require("dotenv"));
 dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
+// THIS LINE CONNECTS FILES TOGETHER
+app.use(express_1.default.static('dist'));
 app.get('/', (req, res) => {
-    console.log(__dirname);
-    res.sendFile(__dirname + '/index.html');
+    res.sendFile(process.cwd() + '/index.html');
+    console.log('whatever');
+});
+app.get('/about', (req, res) => {
+    res.sendFile(process.cwd() + '/about.html');
 });
 app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);
