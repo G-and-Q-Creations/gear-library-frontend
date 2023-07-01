@@ -9,6 +9,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.get('/', (req, res) => {
+    console.log(__dirname);
     res.sendFile(__dirname + '/index.html');
 });
 app.listen(port, () => {
