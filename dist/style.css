@@ -2,11 +2,16 @@
     background-color: ghostwhite;
     color: darkolivegreen;
     font-family: 'Quicksand', sans-serif;
-    padding: 20px;
 }
 
 h1 {
+    padding: 20px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }

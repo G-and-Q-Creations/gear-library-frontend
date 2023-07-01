@@ -1,2 +1,4 @@
 "use strict";
-console.log('hello there!');
+console.log('♡ ^•ﻌ•^ฅ ♡');
+console.log('meow! meow!');
+console.log('♡ ^•ﻌ•^ฅ ♡');
