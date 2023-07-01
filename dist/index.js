@@ -9,7 +9,7 @@ dotenv_1.default.config();
 const app = (0, express_1.default)();
 const port = process.env.PORT;
 app.get('/', (req, res) => {
-    res.send('goeun and quigley gear library!');
+    res.sendFile(__dirname + '/index.html');
 });
 app.listen(port, () => {
     console.log(`[server]: Server is running at http://localhost:${port}`);
